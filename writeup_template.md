@@ -96,12 +96,15 @@ To capture good driving behavior, I first recorded two laps on track one using c
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to steer if the car drifts off to the left or the right. Also, I used the left and right camera images to the data set with appropriate steering angle.  
 
 ![](images/left_clockwise.jpg?raw=true "left_clockwise")
+
 ![](images/right_clockwise.jpg?raw=true "right_clockwise")
 
 Then I repeated the process of center lane driving counter-clockwise on track one in order to generalize the model.
 
 ![](images/center_counter_clockwise.jpg?raw=true "center_counter_clockwise")
+
 ![](images/left_counter_clockwise.jpg?raw=true "left_counter_clockwise")
+
 ![](images/right_counter_clockwise.jpg?raw=true "right_counter_clockwise")
 
 After the collection process, I had 12281 number of data points. I then preprocessed this data by normalization. In the data images, the top portion of the image captures trees and hills and sky, and the bottom portion of the image captures the hood of the car. In order to train faster each image is cropped to focus on only the portion of the image that is useful for predicting a steering angle.
